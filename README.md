@@ -1,4 +1,6 @@
-##非堵塞日志统计,效果很牛逼
+##非堵塞日志实时统计,效果很牛逼
+
+Todo:push到websokock and highcharts
 
 ```
 ruifengyun@bj-log:/data/scribe/spider$ tailf spider-2014-11-06_00001|python ~/counter.py
