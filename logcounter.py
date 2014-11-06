@@ -10,6 +10,7 @@ import sys
 import time
 import fcntl
 import select
+from logcolor import *
 
 
 SEP = "\n"
@@ -85,8 +86,9 @@ def main():
         if len(stat_1m) == SECS_1M:
             stat_1m.pop(0)
         stat_1m.append(cnt)
-        print("%d/%d (rps/min avg)" % (cnt, round(float(sum(stat_1m)) /
+        str = ("%d/%d (rps/min avg)" % (cnt, round(float(sum(stat_1m)) /
                                             len(stat_1m))))
+        print use_style(str, fore='black', back='white')
 
 
 if __name__ == "__main__":
